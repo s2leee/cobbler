@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    cobbler = {
+      source = "cobbler/cobbler"
+      version = "3.0.0"
+    }
+  }
+}
+
 provider "cobbler" {
   username = cobbler # optionally use COBBLER_USERNAME env var
   password = cobbler # optionally use COBBLER_PASSWORD env var
